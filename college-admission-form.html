@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>College Admission Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('images/college-application-form-background.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .form-wrap {
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 75px;
+      margin-bottom: 75px;
+      padding: 15px;
+      background-color: #ffffff;
+      border-left: 10px solid #39A388;
+      box-shadow: 10px 10px #FF0075;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      color: #2C2E43;
+    }
+
+    form {
+      width: max-content;
+      margin: auto;
+    }
+
+    .form-row {
+      display: flex;
+    }
+
+    .label {
+      margin-left: 15px;
+    }
+
+    .input {
+      margin: 15px;
+      padding: 10px;
+      font-size: 14px;
+      box-sizing: border-box;
+      width: 350px;
+      height: 45px;
+    }
+
+    .input-file {
+      margin: 15px 15px 0 15px;
+      padding: 10px 10px 0 10px;
+      font-size: 14px;
+    }
+
+    .input-file-p {
+      margin: 15px;
+      padding: 0 0 10px 10px;
+      font-size: 14px;
+      color: #DA1212;
+    }
+
+    .button-wrap {
+      width: max-content;
+      margin: 10px auto;
+    }
+
+    .button {
+      background-color: #2196F3;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      width: 100px;
+      height: 40px;
+      border-radius: 10px;
+      border-color: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-wrap">
+    <h2 align="center" style="font-weight:700">College Application Form</h2>
+    <form>
+      <h3 style="font-weight:500">Personal Information:</h3>
+      <div>
+        <label class="label" for="username">Your Name</label>
+      </div>
+      <div>
+        <input class="input" type="text" id="username" name="firstname" placeholder="First Name" required>
+        <input class="input" type="text" id="username" name="lastname" placeholder="Last Name" required>
+      </div>
+      <div class="form-row">
+        <div>
+          <div>
+            <label class="label" for="dob">Date of Birth</label>
+          </div>
+          <div>
+            <input class="input" type="date" id="dob" name="dob" min="1960-01-01" max="2000-01-01" required>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label class="label" for="gender">Gender</label>
+          </div>
+          <div>
+            <select class="input" id="gender" name="gender">
+              <option value="gender">Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="custom">Custom</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <div>
+            <label class="label" for="email">Email Address</label>
+          </div>
+          <div>
+            <input class="input" type="email" id="email" name="email" placeholder="username@email.com" required>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label class="label" for="mobile">Mobile Number</label>
+          </div>
+          <div>
+            <input class="input" type="tel" id="mobile" name="mobile" placeholder="+91 00000 00000" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <div>
+            <label class="label" for="fathername">Father's Name</label>
+          </div>
+          <div>
+            <input class="input" type="text" id="fathername" name="fathername" placeholder="Father Name" required>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label class="label" for="occupation">Occupation</label>
+          </div>
+          <div>
+            <input class="input" type="text" id="occupation" name="occupation" placeholder="Occupation" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <div>
+            <label class="label" for="mothername">Mother's Name</label>
+          </div>
+          <div>
+            <input class="input" type="text" id="mothername" name="mothername" placeholder="Mother Name" required>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label class="label" for="occupation">Occupation</label>
+          </div>
+          <div>
+            <input class="input" type="text" id="occupation" name="occupation" placeholder="Occupation" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <div>
+            <label class="label" for="nationality">Nationality</label>
+          </div>
+          <div>
+            <input class="input" type="text" id="nationality" name="nationality" placeholder="Indian" required>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label class="label" for="category">category</label>
+          </div>
+          <div>
+            <select class="input" id="category" name="category">
+              <option value="general">General</option>
+              <option value="obc">OBC</option>
+              <option value="sc">SC</option>
+              <option value="st">ST</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h3 style="font-weight:500">Educational Qualification:</h3>
+      <div class="form-row">
+        <div>
+          <div>
+            <label class="label" for="degree1">Degree Name / Qualification</label>
+          </div>
+          <div>
+            <input class="input" type="text" id="degree1" name="degreename" placeholder="Degree Name" required>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label class="label" for="percentage1">Percentage</label>
+          </div>
+          <div>
+            <input class="input" type="text" id="percentage1" name="percentage" placeholder="Percentage" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <div>
+            <label class="label" for="degree2">Degree Name / Qualification</label>
+          </div>
+          <div>
+            <input class="input" type="text" id="degree2" name="degreename" placeholder="Degree Name">
+          </div>
+        </div>
+        <div>
+          <div>
+            <label class="label" for="percentage2">Percentage</label>
+          </div>
+          <div>
+            <input class="input" type="text" id="percentage2" name="percentage" placeholder="Percentage">
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h3 style="font-weight:500">Residential Information:</h3>
+      <div>
+        <div>
+          <label class="label" for="permanentaddress">Permanent Address</label>
+        </div>
+        <div>
+          <input class="input" type="text" id="permanentaddress" name="streetname" placeholder="House No, Street Name" required>
+          <input class="input" type="text" id="permanentaddress" name="city" placeholder="City" required>
+        </div>
+        <div>
+          <input class="input" type="text" id="permanentaddress" name="district" placeholder="District" required>
+          <input class="input" type="text" id="permanentaddress" name="state" placeholder="State" required>
+        </div>
+        <div>
+          <input class="input" type="text" id="permanentaddress" name="country" placeholder="INDIA" required>
+          <input class="input" type="text" id="permanentaddress" name="pincode" placeholder="Postal Code" required>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label class="label" for="currentaddress">Current Address</label>
+        </div>
+        <div>
+          <input class="input" type="text" id="currentaddress" name="streetname" placeholder="House No, Street Name" required>
+          <input class="input" type="text" id="currentaddress" name="city" placeholder="City" required>
+        </div>
+        <div>
+          <input class="input" type="text" id="currentaddress" name="district" placeholder="District" required>
+          <input class="input" type="text" id="currentaddress" name="state" placeholder="State" required>
+        </div>
+        <div>
+          <input class="input" type="text" id="currentaddress" name="country" placeholder="INDIA" required>
+          <input class="input" type="text" id="currentaddress" name="pincode" placeholder="Postal Code" required>
+        </div>
+      </div>
+      <hr>
+      <h3 style="font-weight:500">Documents / Upload:</h3>
+      <div>
+        <div>
+          <label class="label" for="photograph">Personal Photograph / Passport Size</label>
+        </div>
+        <div>
+          <input class="input-file" type="file" id="photograph" name="photograph" required>
+          <p class="input-file-p">* Note: Only ".jpg" file format is accepted & Size of the file should be "50kb to 150kb."</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label class="label" for="signature">Signature</label>
+        </div>
+        <div>
+          <input class="input-file" type="file" id="signature" name="signature" required>
+          <p class="input-file-p">* Note: Only ".jpg" file format is accepted & Size of the file should be "30kb to 50kb."</p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label class="label" for="certificate">Certificate</label>
+        </div>
+        <div>
+          <input class="input-file" type="file" id="certificate" name="certificate" required>
+          <p class="input-file-p">* Note: Only ".jpg & .pdf" file formats are accepted & Size of the file should be "300kb to 900kb."</p>
+        </div>
+      </div>
+      <hr>
+      <h3 style="font-weight:500">Declaration:</h3>
+      <div>
+        <input type="checkbox" id="terms" name="terms" value="accept" required>
+        <label for="terms">I hereby declare that all the facts mentioned above are accurate to the best of my belief and knowledge.</label>
+      </div>
+      <div class="button-wrap">
+        <button class="button" type="reset" value="reset">Reset</button>
+        <button class="button" type="submit" value="Submit">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
